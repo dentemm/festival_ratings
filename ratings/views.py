@@ -4,7 +4,7 @@ from django.views.generic import View
 from braces.views import LoginRequiredMixin
 
 # Create your views here.
-class AddRatingView(LoginRequiredMixin, View):
+class RatingView(LoginRequiredMixin, View):
 
 	def post(self, request, *args, **kwargs):
 
