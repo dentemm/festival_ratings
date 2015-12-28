@@ -6,7 +6,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 
 # Create your models here.
-class Score(models.model):
+class Score(models.Model):
 
 	# Rating system makes use of contenttypes framework!
 	content_type = models.ForeignKey(ContentType)

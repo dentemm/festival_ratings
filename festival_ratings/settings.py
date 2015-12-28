@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third pary apps
+    'braces',
+
     # Custom apps 
     'ratings',
 ]
