@@ -9,25 +9,29 @@
 </head>
 <body>
 	<div class="container">
-		<form>
+		<form id="rating-form">
 			<div class="form-group">
 				<div class="row">
 					<div class="col-md-6">
-						<input id="input-1" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="md" >
+						<input type="custom" id="input-1" name="eerste" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="md" >
 					</div>
 					<div class="col-md-6">
-						<input id="input-2" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="md" >
+						<input type="custom" id="input-2" name="tweede" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="md" >
 					</div>
 				</div>
 			</div>
-			<button type="submit" class="btn btn-success">Submit</button>
+			<button id="submit-rating" type="submit" class="btn btn-success">Submit</button>
 		</form>
 	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 	<script type="text/javascript" src="{% static 'js/ratings.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/application.js' %}"></script>
 	<script type="text/javascript">
 		//$("#input-id").rating({min:0, max:4, step:1, size:'lg'});
+	</script>
+	<script type="text/javascript">
+		$().rate_me();
 	</script>
 
 </body>
