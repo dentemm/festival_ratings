@@ -9,11 +9,19 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<input id="input-id" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="lg" >
+		<form>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-6">
+						<input id="input-1" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="md" >
+					</div>
+					<div class="col-md-6">
+						<input id="input-2" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="md" >
+					</div>
+				</div>
 			</div>
-		</div>
+			<button type="submit" class="btn btn-success">Submit</button>
+		</form>
 	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
