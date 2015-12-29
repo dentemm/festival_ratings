@@ -12,13 +12,16 @@ $.fn.rate_me = function() {
 
 			console.log('jeej');
 
+			if($(this).val() == 0) {
+				console.log('tis nul!');
+			}
+
 			dict[$(this).attr('name')] = $(this).val();
 
 			/*dict.push({
 				key: $(this).attr('name'),
 				value: $(this).val()
 			});*/
-
 		});	
 
 		console.log(dict);
