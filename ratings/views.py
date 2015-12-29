@@ -1,13 +1,18 @@
 from django.shortcuts import render
-from django.views.generic import View
+from django.views.generic import View, TemplateView
 
 from braces.views import LoginRequiredMixin
 
 # Create your views here.
-class RatingView(LoginRequiredMixin, View):
+class RatingView(LoginRequiredMixin, TemplateView):
 
-	def post(self, request, *args, **kwargs):
+	template_name = 'rating-template.html'
+
+	#def post(self, request, *args, **kwargs):
 
 		# get score from URL attributes
-		pass
+		#pass
 
+class LoginView(TemplateView):
+
+	pass

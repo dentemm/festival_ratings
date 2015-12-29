@@ -61,10 +61,10 @@ class Vote(models.Model):
 	content_object = GenericForeignKey('content_type', 'object_id')
 
 	user = models.ForeignKey(User, blank=True, null=True, related_name='votes')
-	score = models.IntegerField()
+	score = models.IntegerField(null=True)
 
-	created_at = models.DateTimeField(auto_now_add=True)
-	modified_at = models.DateTimeField(auto_now=True)
+	created_at = models.DateTimeField(auto_now_add=True, null=True)
+	modified_at = models.DateTimeField(auto_now=True, null=True)
 
 	class Meta:
 
