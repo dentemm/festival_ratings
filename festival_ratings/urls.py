@@ -22,8 +22,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
 
 	url('', include('social.apps.django_app.urls', namespace='social')),
-    url(r'^login/$', 'home.social-auth-views.login'),
-    url(r'^logout/$', 'home.social-auth-views.logout'),
+    #url(r'^login/$', 'ratings.social-auth-views.login'),
+    #url(r'^logout/$', 'ratings.social-auth-views.logout'),
 
     url(r'^admin/', admin.site.urls),
     url(r'^ratings/', include('ratings.urls')),
