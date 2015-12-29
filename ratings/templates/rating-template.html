@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<input id="input-id" type="number" class="rating" min=0 max=5 step=0.5 data-size="lg" >
+				<input id="input-id" type="number" class="rating" data-stars="4" data-min="0" data-max="4" data-step="1" data-size="lg" >
 			</div>
 		</div>
 	</div>
@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 	<script type="text/javascript" src="{% static 'js/ratings.js' %}"></script>
 	<script type="text/javascript">
-		$("#input-id").rating({min:0, max:4, step:1, size:'lg'});
+		//$("#input-id").rating({min:0, max:4, step:1, size:'lg'});
 	</script>
 
 </body>
